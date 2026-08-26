@@ -1,0 +1,134 @@
+---
+title: " "
+format: html
+editor: visual
+---
+
+## Early Conversational AI: An Experimental Study of ELIZA and Jabberwacky
+
+## Abstract
+
+This study examines the conversational behavior of two early chatbot systems, ELIZA and Jabberwacky, through controlled chatbot-to-chatbot interactions. Five trials were conducted using standardized starting conditions, turn-based exchanges, and predefined criteria for terminating conversations. Conversation length and termination reason were recorded for each trial and analyzed using descriptive statistics and confidence intervals. All five conversations exceeded the minimum threshold of 10 exchanges, with conversation lengths ranging from 14 to 60 exchanges and an average of 42.6 exchanges. Two conversations reached the maximum exchange limit, while the remaining trials ended because of unrelated outputs or consistently short responses. Qualitative observations also indicated differences in response behavior, with ELIZA displaying more repetitive and constrained responses and Jabberwacky producing more varied and unpredictable outputs. The results provide a small-scale examination of the capabilities and limitations of early conversational AI systems.
+
+## 1. Introduction
+
+The development of conversational artificial intelligence can be traced to early systems such as ELIZA, which demonstrated that computers could simulate aspects of human conversation using relatively simple rule-based approaches. Exploring ELIZA's conversational behavior raised a broader question: how do different generations and architectures of early chatbot systems behave when interacting directly with one another?
+
+This study investigates interactions between ELIZA and Jabberwacky, an early conversational system designed to generate responses using a different approach from ELIZA. Rather than evaluating either chatbot through human interaction, the study examines what occurs when the two systems communicate directly.
+
+The primary research question is:
+
+> **How do ELIZA and Jabberwacky differ in conversational stability, response behavior, and termination patterns when interacting under standardized conditions?**
+
+The study focuses on conversation length and termination behavior while also documenting qualitative patterns such as repetition, unrelated responses, and differences in response diversity.
+
+## 2. Experimental Design
+
+### 2.1 Systems
+
+The experiment evaluated two early conversational AI systems:
+
+-   **ELIZA**
+
+-   **Jabberwacky 16-2**
+
+Each system was operated using its default settings. New conversations were initiated for every trial to avoid effects from previous conversational context or memory.
+
+### 2.2 Controlled Conditions
+
+To maintain consistency across trials, the following conditions were held constant:
+
+-   Each trial began as a new conversation with no prior memory.
+
+-   Default system settings were used.
+
+-   Conversations followed a turn-based format.
+
+-   ELIZA provided the opening statement for each trial.
+
+-   Each chatbot's response was passed to the other system verbatim without modification.
+
+-   Both systems were reset between trials.
+
+Five independent conversation trials were conducted.
+
+### 2.3 Termination Criteria
+
+Because an open-ended chatbot conversation has no predetermined endpoint, standardized termination criteria were established before conducting the trials. A conversation was terminated when one of the following conditions was met:
+
+1.  **Repetition:** A specific phrase was repeated more than three times within the final five prompts, using a matching threshold of approximately ±2 words.
+
+2.  **Unrelated or generic responses:** A chatbot produced responses that were judged to be unrelated to the conversational context or excessively generic within the final five prompts.
+
+3.  **Minimal responses:** A chatbot consistently produced responses shorter than three words across the final five prompts.
+
+4.  **Maximum exchange limit:** The conversation reached 60 exchanges, at which point the trial was terminated regardless of conversational quality.
+
+A trial was considered to have reached the minimum interaction threshold if it completed at least 10 exchanges before meeting a termination criterion.
+
+## 3. Data Collection
+
+For each trial, the complete chatbot exchange was recorded along with the resulting conversation length and reason for termination.
+
+The primary quantitative variables were:
+
+-   **Conversation length:** total number of exchanges completed during a trial.
+
+-   **Termination reason:** the condition that ultimately ended the conversation.
+
+The full conversation transcripts were retained as the underlying observational data, allowing qualitative patterns in chatbot behavior to be examined alongside the quantitative results.
+
+## 4. Results
+
+Five chatbot-to-chatbot conversation trials were conducted. All five trials reached the minimum threshold of 10 exchanges, indicating that each interaction was able to continue beyond the minimum required conversational length.
+
+Conversation length ranged from **14 to 60 exchanges**, with a mean of **42.6 exchanges**.
+
+Termination reasons varied across the five trials:
+
+| Termination reason             | Trials | Proportion |
+|--------------------------------|--------|------------|
+| Maximum exchange limit         | 2      | 40%        |
+| Unrelated or generic responses | 2      | 40%        |
+| Minimal responses              | 1      | 20%        |
+| Repetition                     | 0      | 0%         |
+
+Two conversations reached the maximum limit of 60 exchanges. Because these conversations were stopped by the experimental design rather than by a natural conversational endpoint, their observed lengths represent a minimum duration rather than the point at which the systems necessarily would have stopped interacting.
+
+### 4.1 Conversational Behavior
+
+The conversation transcripts revealed qualitative differences between the two systems.
+
+ELIZA frequently returned to a relatively limited set of response patterns, resulting in noticeable repetition throughout several conversations. Jabberwacky generally produced more varied and unpredictable responses, although this variability also contributed to responses that were sometimes unrelated to the preceding conversational context.
+
+Interestingly, none of the five trials met the formal repetition termination criterion even though repeated responses were observed throughout the conversations. This suggests that repetition occurred frequently enough to be qualitatively noticeable but did not satisfy the specific threshold established for ending a trial.
+
+## 5. Statistical Interpretation
+
+The estimated mean conversation length was **42.6 exchanges**. Using the five observed trials, the approximate 95% confidence interval for the mean conversation length was **18.9 to 66.3 exchanges**.
+
+The wide interval reflects the substantial variability in conversation length and the small number of trials. It also extends beyond the experimental maximum of 60 exchanges, highlighting the uncertainty introduced by the stopping rule.
+
+Termination outcomes were similarly variable. Forty percent of trials ended at the maximum exchange limit, 40% ended because of unrelated or generic responses, and 20% ended because of consistently short responses. Given the small sample size, these proportions should be interpreted as descriptive estimates rather than stable estimates of chatbot behavior.
+
+Overall, the results suggest that both systems were capable of sustaining interactions beyond the minimum threshold, but conversational stability varied substantially across trials. The differences observed in response behavior also suggest that the systems exhibited distinct conversational patterns despite being evaluated under the same experimental conditions.
+
+## 6. Limitations
+
+Several limitations affect the interpretation of these results.
+
+First, the study consisted of only five trials. A larger number of conversations would provide more observations and improve the reliability of estimates for conversation length and termination behavior.
+
+Second, some termination criteria required qualitative judgment. In particular, determining whether a response was sufficiently unrelated or generic to terminate a conversation was not always straightforward. Jabberwacky's relatively unpredictable responses made this distinction especially difficult.
+
+Third, the numerical thresholds used to define repetition, minimal responses, and maximum conversation length were established as experimental controls rather than empirically validated thresholds. Different thresholds could produce different termination outcomes.
+
+Finally, the 60-exchange maximum introduces a form of censoring into the conversation-length measure. Trials that reached the maximum limit may have continued if the stopping rule had not been imposed, meaning that their observed lengths do not necessarily represent the natural duration of those conversations.
+
+## 7. Conclusion
+
+This study used controlled chatbot-to-chatbot interactions to examine the conversational behavior of ELIZA and Jabberwacky. Across five trials, both systems consistently exceeded the minimum interaction threshold, but the resulting conversations varied substantially in length and termination behavior.
+
+ELIZA exhibited more repetitive and constrained response patterns, while Jabberwacky generated more varied but less predictable responses. The results demonstrate that the ability to produce extended exchanges does not necessarily imply conversational coherence or stability. Both systems were capable of sustaining interactions, yet their conversations frequently exhibited repetition, generic responses, or departures from the surrounding context.
+
+Although the small number of trials limits the generalizability of the findings, the experiment provides a structured examination of the behavioral characteristics and limitations of early conversational AI systems. The study also illustrates how controlled experimental design can be used to evaluate AI systems even when their internal mechanisms are not directly observable.
