@@ -1,0 +1,114 @@
+---
+title: "Multilingual LLM Evaluation: Idiom Interpretation and Translation"
+author: "Nabiha Chowdhury"
+date: "`r Sys.Date()`"
+output:
+  html_document: default
+---
+
+
+## Table #1
+```{r}
+library(tibble)
+
+researcher <- rep("Nabiha", 36)
+
+llm_type <- c(rep("DuckAI:GPT5", 9), rep("Claude", 9),rep("ChatGPT", 9), rep("Gemini", 9))
+
+idiom <- c(rep("Its raining cats and dogs", 3), rep("Don’t cry over spilled milk", 3), rep("The Whole Nine Yards", 3), rep("Its raining cats and dogs", 3), rep("Don’t cry over spilled milk", 3), rep("The Whole Nine Yards", 3), rep("Its raining cats and dogs", 3), rep("Don’t cry over spilled milk", 3), rep("The Whole Nine Yards", 3), rep("Its raining cats and dogs", 3), rep("Don’t cry over spilled milk", 3), rep("The Whole Nine Yards", 3))
+
+language <- c("English", "Arabic", "Chinese","English", "Arabic", "Chinese","English", "Arabic", "Chinese","English", "Arabic", "Chinese","English", "Arabic", "Chinese","English", "Arabic", "Chinese","English", "Arabic", "Chinese","English", "Arabic", "Chinese","English", "Arabic", "Chinese","English", "Arabic", "Chinese","English", "Arabic", "Chinese","English", "Arabic", "Chinese")
+
+llm_judge <- c(rep("MetaAI and Copilot", 36))
+
+origin <- c(5,3,4.5,5,5,5,5,5,5,4,5,5,5,4,4,3,5,4,4.5,5,5,5,5,4.5,5,5,5,3.5,4.5,3.5,5,5,5,5,3.5,3.5)
+
+accuracy <- c(5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5)
+
+score <- (origin + accuracy) / 2
+
+llms_data <- tibble(
+  researcher = researcher,         # Nabiha
+  llm = llm_type,                  # ChatGPT, DuckAI, Gemini, Claude
+  idiom_prompt = idiom,            # idiom used
+  language_type = language,        # language used
+  llm_judge = llm_judge,           # llm used to judge
+  origin_accuracy = origin,        # correct origin
+  translation_accuracy = accuracy, # correct translation
+  overall_score = score)           # score of llm's
+```
+
+
+## Table #2
+```{r}
+
+name <- c("Copilot", "MetaAI", "Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI", "Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI","Copilot", "MetaAI")
+
+idiom_type <- c(rep("Its raining cats and dogs", 6), rep("Don’t cry over spilled milk", 6), rep("The Whole Nine Yards", 6), rep("Its raining cats and dogs", 6), rep("Don’t cry over spilled milk", 6), rep("The Whole Nine Yards", 6), rep("Its raining cats and dogs", 6), rep("Don’t cry over spilled milk", 6), rep("The Whole Nine Yards", 6), rep("Its raining cats and dogs", 6), rep("Don’t cry over spilled milk", 6), rep("The Whole Nine Yards", 6))
+
+llm_used <- c(rep("DuckAI", 18), rep("Claude", 18), rep("ChatGPT", 18), rep("Gemini", 18))
+
+language_used <- c("English", "English", "Arabic","Arabic", "Chinese", "Chinese","English", "English", "Arabic","Arabic", "Chinese", "Chinese","English", "English", "Arabic","Arabic", "Chinese", "Chinese","English", "English", "Arabic","Arabic", "Chinese", "Chinese","English", "English", "Arabic","Arabic", "Chinese", "Chinese","English", "English", "Arabic","Arabic", "Chinese", "Chinese", "English", "English", "Arabic","Arabic", "Chinese", "Chinese","English", "English", "Arabic","Arabic", "Chinese", "Chinese","English", "English", "Arabic","Arabic", "Chinese", "Chinese","English", "English", "Arabic","Arabic", "Chinese", "Chinese","English", "English", "Arabic","Arabic", "Chinese", "Chinese","English", "English", "Arabic","Arabic", "Chinese", "Chinese")
+
+origin_results <- c(5,5,1,5,4,5,5,5,5,5,5,5,5,5,5,5,5,5,4,4,5,5,5,5,5,5,5,3,4,4,3,3,5,5,4,4, 
+                    4,5,5,5,5,5,5,5,5,5,4,5,5,5,5,5,5,5,
+                    4,3,4,5,4,3,5,5,5,5,5,5,5,5,2,5,4,3)
+
+translation_results <- c(5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5, 
+                         5,5,5,5,5,5,5,5,5,5,4,5,5,5,5,5,5,5,
+                         5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5)
+
+average_score <- ((origin_results + translation_results)/2)
+
+
+llm_scores <- tibble(
+  LLM_Judge = name,
+  Idiom_prompt = idiom_type,
+  LLM_used_for_original_prompt = llm_used,
+  Language = language_used,
+  Origin_score = origin_results,
+  Translation_score = translation_results,
+  Overall_score = average_score)
+
+head(llm_scores, 5)
+```
+
+
+## ANOVA testing 
+```{r}
+# anova score vs languages
+summary(aov(overall_score ~ language_type, data = llms_data))
+```
+
+HO: there is no difference in the overall score depending on which language of the three is used for the idiom translation
+
+The resulting pvalue 0.94 > 0.05, which is not statically significant so we fail to reject the null hypothesis, there is NO difference in the overall score depending on which language of the three is used for the idiom translation
+
+```{r}
+# anova score vs llm used 
+summary(aov(Overall_score ~ LLM_used_for_original_prompt, data = llm_scores))
+```
+HO: there is no difference in the overall score depending on which LLM is used to ask for translation/origin of idioms. 
+
+The resulting pvalue 0.114 > 0.05, which is not statically significant so we fail to reject the null hypothesis, there is NO difference in the overall score when using different LLM's to translate idioms
+
+## Visualizations 
+```{r}
+library(tidyverse)
+#  Average Overall Score by LLM
+ggplot(llms_data, aes(x = llm, y = overall_score, fill = language_type)) +
+  geom_boxplot() +
+  labs(
+    title="LLM vs Overall Score")
+```
+
+```{r}
+#  Average Overall Score by Language
+ggplot(llms_data, aes(x = language_type, y = overall_score, fill = language_type)) +
+  stat_summary(geom = "bar") +
+  facet_wrap(~ idiom_prompt) +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  labs(title = "Average Overall Score by Language", y = "Average Score", x = "Language")
+```
+
