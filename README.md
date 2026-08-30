@@ -92,9 +92,36 @@ This study evaluates four large language models—ChatGPT, Gemini, Claude, and D
 
 ---
 
-### 4. LLM Perception and Storytelling
+### 4. LLM Storytelling and Sentiment Analysis
 
-*Coming soon.*
+**Research Question:**
+Do different LLMs exhibit distinct positive or negative storytelling tendencies when responding to the same neutral images?
+
+**Overview:**
+This study explores how large language models interpret visual information and generate narratives from the same neutral images. Claude, DuckAI, and Gemini were each given three images and instructed to generate 200-word stories. The resulting narratives were analyzed in R using sentiment analysis to count positive and negative words and classify the overall narrative tone.
+
+**Key Findings:**
+
+* 9 total stories were analyzed across 3 LLMs and 3 images.
+* No statistically significant association was found between the LLM used and the positive/negative classification of the generated stories.
+* The chi-squared test produced a p-value of **0.6376**.
+* Fisher's exact test produced a p-value of **1.00**, providing consistent evidence given the small sample size.
+* Positive and negative sentiment words made up relatively small portions of the generated narratives, suggesting that word-level sentiment may not fully capture the emotional tone of LLM-generated stories.
+
+**Methods & Tools:**
+
+* Large language model evaluation
+* Multimodal AI
+* Text preprocessing
+* Sentiment analysis
+* Bing sentiment lexicon
+* R
+* Tidyverse
+* Data visualization
+* Chi-squared test
+* Fisher's exact test
+* Experimental design
+
 
 ## Research Themes
 
