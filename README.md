@@ -33,9 +33,31 @@ This study examines chatbot-to-chatbot interactions between ELIZA and Jabberwack
 
 ---
 
-### 2. Analysis of Gameplay in Connect 4 Against AI
+### 2. Connect 4 Against AI: The Effect of Human Strategy on Gameplay
 
-*Coming soon.*
+**Research Question:**
+How does a human player's strategy influence game outcomes and game length when competing against an AI opponent in Connect 4?
+
+**Overview:**
+This study examines whether different human gameplay strategies affect outcomes when playing Connect 4 against an AI opponent. Forty games were conducted under standardized conditions, comparing a normal strategy that balanced offensive and defensive moves with a defensive strategy focused on blocking the opponent. Game outcomes and the number of human moves were analyzed using Fisher's exact test and one-way ANOVA.
+
+**Key Findings:**
+
+* The human player won 5 of 38 non-draw games, while the AI won the majority of games.
+* Fisher's exact test found no statistically significant association between gameplay strategy and game outcome ($p = 1.00$).
+* Defensive gameplay resulted in longer games on average, with 15.95 human moves compared with 13.00 under the normal strategy.
+* One-way ANOVA found a statistically significant difference in the number of human moves between strategies ($p = 0.0252$).
+* The findings suggest that defensive strategy influenced game duration but did not significantly improve the likelihood of winning.
+
+**Methods & Tools:**
+
+* Experimental design
+* Data collection
+* R
+* Statistical analysis
+* Fisher's exact test
+* One-way ANOVA
+* Data visualization
 
 ---
 
