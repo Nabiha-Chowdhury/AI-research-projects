@@ -61,9 +61,34 @@ This study examines whether different human gameplay strategies affect outcomes 
 
 ---
 
-### 3. Exploration of Search Query Formatting
+### 3. Multilingual LLM Evaluation: Idiom Interpretation and Translation
 
-*Coming soon.*
+**Research Question:**
+How does LLM performance in interpreting and translating idioms differ across languages and across different large language models?
+
+**Overview:**
+This study evaluates four large language models—ChatGPT, Gemini, Claude, and DuckAI:GPT5—on their ability to interpret three common English idioms across English, Arabic, and Chinese. Responses were evaluated by Microsoft Copilot and Meta AI using separate 1–5 scores for translation/meaning accuracy and idiom-origin accuracy. Overall scores were analyzed using one-way ANOVA to examine differences across languages and LLMs.
+
+**Key Findings:**
+
+* 72 scored observations were collected across four LLMs, three idioms, three languages, and two LLM-based evaluators.
+* No statistically significant difference in overall scores was detected across English, Arabic, and Chinese ($p = 0.94$).
+* No statistically significant difference in overall scores was detected among the four LLMs tested ($p = 0.114$).
+* Overall scores were generally high, although origin scores showed more variation than translation scores.
+* The results suggest that substantial differences in evaluated performance were not detected within the specific conditions of this experiment.
+
+**Methods & Tools:**
+
+* LLM evaluation
+* Multilingual data collection
+* Experimental design
+* R
+* Tidyverse
+* Data visualization
+* One-way ANOVA
+* Statistical hypothesis testing
+* Comparative model evaluation
+
 
 ---
 
