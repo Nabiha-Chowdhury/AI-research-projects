@@ -1,0 +1,37 @@
+observation,researcher,llm,idiom_prompt,language_type,llm_judge,origin_accuracy,translation_accuracy,overall_score
+1,Nabiha,DuckAI:GPT5,It's raining cats and dogs,English,MetaAI and Copilot,5.0,5,5.0
+2,Nabiha,DuckAI:GPT5,It's raining cats and dogs,Arabic,MetaAI and Copilot,3.0,5,4.0
+3,Nabiha,DuckAI:GPT5,It's raining cats and dogs,Chinese,MetaAI and Copilot,4.5,5,4.75
+4,Nabiha,DuckAI:GPT5,Don't cry over spilled milk,English,MetaAI and Copilot,5.0,5,5.0
+5,Nabiha,DuckAI:GPT5,Don't cry over spilled milk,Arabic,MetaAI and Copilot,5.0,5,5.0
+6,Nabiha,DuckAI:GPT5,Don't cry over spilled milk,Chinese,MetaAI and Copilot,5.0,5,5.0
+7,Nabiha,DuckAI:GPT5,The whole nine yards,English,MetaAI and Copilot,5.0,5,5.0
+8,Nabiha,DuckAI:GPT5,The whole nine yards,Arabic,MetaAI and Copilot,5.0,5,5.0
+9,Nabiha,DuckAI:GPT5,The whole nine yards,Chinese,MetaAI and Copilot,5.0,5,5.0
+10,Nabiha,Claude,It's raining cats and dogs,English,MetaAI and Copilot,4.0,5,4.5
+11,Nabiha,Claude,It's raining cats and dogs,Arabic,MetaAI and Copilot,5.0,5,5.0
+12,Nabiha,Claude,It's raining cats and dogs,Chinese,MetaAI and Copilot,5.0,5,5.0
+13,Nabiha,Claude,Don't cry over spilled milk,English,MetaAI and Copilot,5.0,5,5.0
+14,Nabiha,Claude,Don't cry over spilled milk,Arabic,MetaAI and Copilot,4.0,5,4.5
+15,Nabiha,Claude,Don't cry over spilled milk,Chinese,MetaAI and Copilot,4.0,5,4.5
+16,Nabiha,Claude,The whole nine yards,English,MetaAI and Copilot,3.0,5,4.0
+17,Nabiha,Claude,The whole nine yards,Arabic,MetaAI and Copilot,5.0,5,5.0
+18,Nabiha,Claude,The whole nine yards,Chinese,MetaAI and Copilot,4.0,5,4.5
+19,Nabiha,ChatGPT,It's raining cats and dogs,English,MetaAI and Copilot,4.5,5,4.75
+20,Nabiha,ChatGPT,It's raining cats and dogs,Arabic,MetaAI and Copilot,5.0,5,5.0
+21,Nabiha,ChatGPT,It's raining cats and dogs,Chinese,MetaAI and Copilot,5.0,5,5.0
+22,Nabiha,ChatGPT,Don't cry over spilled milk,English,MetaAI and Copilot,5.0,5,5.0
+23,Nabiha,ChatGPT,Don't cry over spilled milk,Arabic,MetaAI and Copilot,5.0,5,5.0
+24,Nabiha,ChatGPT,Don't cry over spilled milk,Chinese,MetaAI and Copilot,4.5,5,4.75
+25,Nabiha,ChatGPT,The whole nine yards,English,MetaAI and Copilot,5.0,5,5.0
+26,Nabiha,ChatGPT,The whole nine yards,Arabic,MetaAI and Copilot,5.0,5,5.0
+27,Nabiha,ChatGPT,The whole nine yards,Chinese,MetaAI and Copilot,5.0,5,5.0
+28,Nabiha,Gemini,It's raining cats and dogs,English,MetaAI and Copilot,3.5,5,4.25
+29,Nabiha,Gemini,It's raining cats and dogs,Arabic,MetaAI and Copilot,4.5,5,4.75
+30,Nabiha,Gemini,It's raining cats and dogs,Chinese,MetaAI and Copilot,3.5,5,4.25
+31,Nabiha,Gemini,Don't cry over spilled milk,English,MetaAI and Copilot,5.0,5,5.0
+32,Nabiha,Gemini,Don't cry over spilled milk,Arabic,MetaAI and Copilot,5.0,5,5.0
+33,Nabiha,Gemini,Don't cry over spilled milk,Chinese,MetaAI and Copilot,5.0,5,5.0
+34,Nabiha,Gemini,The whole nine yards,English,MetaAI and Copilot,5.0,5,5.0
+35,Nabiha,Gemini,The whole nine yards,Arabic,MetaAI and Copilot,3.5,5,4.25
+36,Nabiha,Gemini,The whole nine yards,Chinese,MetaAI and Copilot,3.5,5,4.25
